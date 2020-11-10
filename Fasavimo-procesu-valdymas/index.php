@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamybos valdymas</title>
+    <title>Fasavimo procesų valdymas</title>
     <style>
         html,
         body {
@@ -27,7 +27,7 @@
 <body>
     <a href="../index.php" class="btn btn-warning">Grįžti</a>
 
-    <h2 class="header">Gamybos valdymas</h2>
+    <h2 class="header">Fasavimo procesų valdymas</h2>
     <div class="container">
         <ul class="list-unstyled">
             <li><a href="Fasavimas.php" class="btn btn-warning funkcijos">Fasavimas</a></li>
