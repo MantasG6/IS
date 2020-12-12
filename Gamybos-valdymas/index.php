@@ -30,8 +30,8 @@
     <h2 class="header">Gamybos valdymas</h2>
     <div class="container">
         <ul class="list-unstyled">
-            <li><a href="Atsakingu-darbuotoju-perziura.php" class="btn btn-warning funkcijos">Atsakingų darbuotojų peržiūra</a></li>
-            <li><a href="Ingredientu-perziura.php" class="btn btn-warning funkcijos">Ingredientų peržiūra</a></li>
+            <li><a href="Views/Atsakingu-darbuotoju-perziura.php" class="btn btn-warning funkcijos">Atsakingų darbuotojų peržiūra</a></li>
+            <li><a href="Views/Ingredientu-perziura.php" class="btn btn-warning funkcijos">Ingredientų peržiūra</a></li>
         </ul>
     </div>
 
