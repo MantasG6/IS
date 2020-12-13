@@ -7,7 +7,7 @@ require_once("../Controllers/atsakingas_darbuotojas_controller.php");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atsakingų darbuotojų peržiūra</title>
+    <title>Atsakingų darbuotojų redagavimas</title>
     <style>
         html,
         body {
@@ -28,12 +28,12 @@ require_once("../Controllers/atsakingas_darbuotojas_controller.php");
     </style>
 </head>
 <body>
-    <a href="../index.php" class="btn btn-warning">Grįžti</a>
+    <a href="Atsakingu-darbuotoju-perziura.php" class="btn btn-warning">Grįžti</a>
 
-    <h3 class="header">Atsakingų darbuotojų peržiūra</h3>
-    <?php if ( isset($_SESSION['success']) ) {
-        echo('<p class="header" style="color: green;">'.htmlentities($_SESSION['success'])."</p>\n");
-        unset($_SESSION['success']);
+    <h3 class="header">Atsakingų darbuotojų redagavimas</h3>
+    <?php if ( isset($_SESSION['error']) ) {
+        echo('<p class="header" style="color: red;">'.htmlentities($_SESSION['error'])."</p>\n");
+        unset($_SESSION['error']);
     } ?>
     <div class="container">
         <?php if (count($atsakingi_darbuotojai) > 0): ?>
@@ -65,6 +65,9 @@ require_once("../Controllers/atsakingas_darbuotojas_controller.php");
                     echo $ad->nuobaudu_skaicius;
                     echo "</td><td>";
                     echo $ad->naudotojo_id;
+                    echo "</td><td>";
+                    echo ("<a href=\"Atsakingu-darbuotoju-redagavimas.php?asmens_kodas=".$ad->asmens_kodas."\">Redaguoti</a> | ");
+                    echo ("<a href=\"Atsakingu-darbuotoju-salinimas.php?asmens_kodas=".$ad->asmens_kodas."\">Ištrinti</a>");
                     echo "</td></tr>";
                 }
                 ?>
@@ -73,12 +76,6 @@ require_once("../Controllers/atsakingas_darbuotojas_controller.php");
         <?php else: ?>
         <p>Nėra įrašų</p>
         <?php endif; ?>
-    </div>
-    <div class="container">
-        <ul class="list-unstyled">
-            <li><a href="Atsakingu-darbuotoju-priskyrimas.php" class="btn btn-warning funkcijos">Atsakingų darbuotojų priskyrimas</a></li>
-            <li><a href="Atsakingu-darbuotoju-redagavimas-pasirinkimas.php" class="btn btn-warning funkcijos">Atsakingų darbuotojų redagavimas</a></li>
-        </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
