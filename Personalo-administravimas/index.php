@@ -1,4 +1,4 @@
-<?php error_reporting(0); 
+<?php 
 $page= $_GET['psl'];?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,80 +43,32 @@ $page= $_GET['psl'];?>
 <?php } else  { ?>
 <?php
 if($page == "prieduSkaiciavimas") { 
- 
-$page= $_GET['act'];
-	if($page == "") {?>
-	<h2 class="header">Priedų skaičiavimas</h2>
-    <div class="container">
-       <ul class="list-unstyled">
-            <li><a href="?psl=prieduSkaiciavimas&act=pridetiPrieda" class="btn btn-warning funkcijos">Pridėti priedą</a></li>
-            <li><a href="?psl=prieduSkaiciavimas&act=atimtiPrieda" class="btn btn-warning funkcijos">Atimti priedą</a></li>
-                      
-        </ul> 
-    </div>
-	<?php } 
-	if($page=="pridetiPrieda") { 
-	?>
-	<h2 class="header">Pridėti priedą</h2>
-	<?php } if($page=="atimtiPrieda") { ?>
-<h2 class="header">Atimti priedą</h2>
-	<?php } ?>
-<?php } ?>
+ require_once "Views/priedu_skaiciavimas.php";
+	} ?>
 <?php
-if($page == "darbuotojuDuomenys") { ?>
-<h2 class="header">Darbuotojų duomenys</h2>
-<?php } ?>
+if($page == "darbuotojuDuomenys") { 
+require_once "Views/darbuotoju_duomenys.php";
+} 
+
+
+if($page == "atlyginimoSkaiciavimas") { 
+require_once "Views/atlyginimo_skaiciavimas.php";
+ } ?>
 
 <?php
-if($page == "atlyginimoSkaiciavimas") { ?>
-<h2 class="header">Atlyginimo skaičiavimas</h2>
-<?php } ?>
-
-<?php
-if($page == "stebesenuAtlikimas") { ?>
-<h2 class="header">Stebėsenų atlikimas</h2>
-<?php } ?>
+if($page == "stebesenuAtlikimas") {
+require_once "Views/stebesenu_atlikimas.php";
+} ?>
 
 <?php
 if($page == "atostoguPaskyrimas") { 
-$page= $_GET['act'];
-	if($page == "") {?>
-	<h2 class="header">Atostogų paskyrimas</h2>
-    <div class="container">
-       <ul class="list-unstyled">
-            <li><a href="?psl=atostoguPaskyrimas&act=paskirtiAtostogas" class="btn btn-warning funkcijos">Paskirti atostogas</a></li>
-            <li><a href="?psl=atostoguPaskyrimas&act=atimtiAtostogas" class="btn btn-warning funkcijos">Atimti atostogas</a></li>            
-        </ul> 
-    </div>
-	<?php } 
-	if($page=="paskirtiAtostogas") { 
-	?>
-	<h2 class="header">Paskirti atostogas</h2>
-	<?php } 
-	if($page=="atimtiAtostogas") {
-		?>
-		<h2 class="header">Atimti atostogas</h2>
-	<?php } ?>
-<?php } ?>
+require_once "Views/atostogu_paskyrimas.php";
+ } ?>
 
 <?php
-if($page == "nuobauduPaskyrimas") { ?>
- <?php
-$page= $_GET['act'];
-	if($page == "") {?>
-	<h2 class="header">Nuobaudų paskyrimas</h2>
-    <div class="container">
-       <ul class="list-unstyled">
-            <li><a href="?psl=nuobauduPaskyrimas&act=paskirtiNuobauda" class="btn btn-warning funkcijos">Paskirti nuobaudą</a></li>
-                      
-        </ul> 
-    </div>
-	<?php } 
-	if($page=="paskirtiNuobauda") { 
-	?>
-	<h2 class="header">Paskirti nuobaudą</h2>
-	<?php } ?>
-<?php } ?>
+if($page == "nuobauduPaskyrimas") {
+require_once "Views/nuobaudu_paskyrimas.php";
+	} ?>
 
 <?php } ?>
 
