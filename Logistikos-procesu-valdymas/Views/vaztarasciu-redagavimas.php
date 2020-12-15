@@ -88,15 +88,15 @@ $mypdo = $pdo;
 				<div class="container">
 				<form method="post" action = "?uid=<?=$id;?>&veikmas=redaguoti">
 				<label>Siuntejas</label>
-				<input type="text" size="40" name="siuntejas" value="<?= $vaztarastis->siuntejas ?>"><br/>
+				<input type="text" size="40" name="siuntejas" value="<?= $vaztarastis->siuntejas ?>" required><br/>
 				<label>Gavejas</label>
-				<input type="text" size="40" name="gavejas" value="<?= $vaztarastis->gavejas ?>"><br/>
+				<input type="text" size="40" name="gavejas" value="<?= $vaztarastis->gavejas ?>"required><br/>
 				<label>Produktas</label>
-				<input type="text" size="40" name="produktas" value="<?= $vaztarastis->produkto_pavadinimas ?>"><br/>
+				<input type="text" size="40" name="produktas" value="<?= $vaztarastis->produkto_pavadinimas ?>"required><br/>
 				<label>Kiekis</label>
-				<input type="text" size="40" name="kiekis" value="<?= $vaztarastis->produkto_kiekis ?>"><br/>	
+				<input type="text" size="40" name="kiekis" value="<?= $vaztarastis->produkto_kiekis ?>"required><br/>	
 				<label>Data</label>
-				<input type="text" size="40" name="data" value="<?= $vaztarastis->sudarymo_data ?>"><br/>				
+				<input type="text" size="40" name="data" value="<?= $vaztarastis->sudarymo_data ?>"required><br/>				
 				<button type="submit" class="btn btn-warning" name="Edit">Redaguoti</button>
 				</form>
 				</div>

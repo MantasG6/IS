@@ -81,11 +81,11 @@ $mypdo = $pdo;
 				<div class="container">
 				<form method="post" action = "?uid=<?=$id;?>&veikmas=redaguoti">
 				<label>Produktas</label>
-				<input type="text" size="40" name="produktas" value="<?= $krovinys->pavadinimas ?>"><br/>
+				<input type="text" size="40" name="produktas" value="<?= $krovinys->pavadinimas ?>" required><br/>
 				<label>Kiekis</label>
-				<input type="text" size="40" name="kiekis" value="<?= $krovinys->produkto_kiekis ?>"><br/>
+				<input type="text" size="40" name="kiekis" value="<?= $krovinys->produkto_kiekis ?>" required><br/>
 				<label>Svoris</label>
-				<input type="text" size="40" name="svoris" value="<?= $krovinys->svoris ?>"><br/>	
+				<input type="text" size="40" name="svoris" value="<?= $krovinys->svoris ?>" required> <br/>	
 				<button type="submit" class="btn btn-warning" name="Edit">Redaguoti</button>
 				</form>
 				</div>
