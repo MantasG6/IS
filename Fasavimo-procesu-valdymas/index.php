@@ -30,8 +30,8 @@
     <h2 class="header">Fasavimo procesų valdymas</h2>
     <div class="container">
         <ul class="list-unstyled">
-            <li><a href="Fasavimas.php" class="btn btn-warning funkcijos">Fasavimas</a></li>
-            <li><a href="Aparatai.php" class="btn btn-warning funkcijos">Aparatai</a></li>
+            <li><a href="Views/Fasavimas.php" class="btn btn-warning funkcijos">Fasavimas</a></li>
+            <li><a href="Views/Aparatai.php" class="btn btn-warning funkcijos">Aparatai</a></li>
         </ul>
     </div>
 
