@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aparato redagavimas</title>
+    <title>Fasavimo kelias</title>
     <style>
         html,
         body {
@@ -25,12 +25,13 @@
     </style>
 </head>
 <body>
-    <a href="Aparatai.php" class="btn btn-warning">Grįžti</a>
+    <a href="../index.php" class="btn btn-warning">Grįžti</a>
 
-    <h3 class="header">Aparato redagavimas</h3>
+    <h3 class="header">Fasavimo kelias</h3>
     <div class="container">
         <ul class="list-unstyled">
-            <h3>Čia bus galima pasirinkti aparatą ir redaguoti jo duomenis</h3>
+            <li><a href="fasavimo-keliu-perziura.php" class="btn btn-warning funkcijos">Fasavimo kelių peržiūra</a></li>
+            <li><a href="#" class="btn btn-warning funkcijos">Fasavimo kelių patvirtinimas</a></li>
         </ul>
     </div>
     
