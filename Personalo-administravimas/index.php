@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 $page= $_GET['psl'];?>
 <!DOCTYPE html>
 <html lang="en">
