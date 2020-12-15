@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Važtaraščiū peržiūra</title>
+    <title>Važtaraščiai</title>
     <style>
         html,
         body {
@@ -27,11 +27,11 @@
 <body>
     <a href="index.php" class="btn btn-warning">Grįžti</a>
 
-    <h3 class="header">Važtaraščiū peržiūra</h3>
+    <h3 class="header">Važtaraščiai</h3>
     <div class="container">
         <ul class="list-unstyled">       
-            <li><a href="#" class="btn btn-warning funkcijos">Redagavimas</a></li>
-            <li><a href="#" class="btn btn-warning funkcijos">Patikra</a></li>
+            <li><a href="Views/vaztarasciai.php" class="btn btn-warning funkcijos">Peržiūra</a></li>
+            <li><a href="Views/vaztarasciu-redagavimas.php" class="btn btn-warning funkcijos">Redagavimas</a></li>
         </ul>
     </div>
     

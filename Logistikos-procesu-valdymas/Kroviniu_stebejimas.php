@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krovinių stebėjimas</title>
+    <title>Kroviniai</title>
     <style>
         html,
         body {
@@ -27,12 +27,13 @@
 <body>
     <a href="index.php" class="btn btn-warning">Grįžti</a>
 
-    <h3 class="header">Krovinių stebėjimas</h3>
+    <h3 class="header">Kroviniai</h3>
     <div class="container">
         <ul class="list-unstyled">
-            <li><a href="#" class="btn btn-warning funkcijos">Atvykstantys kroviniai</a></li>
-            <li><a href="#" class="btn btn-warning funkcijos">Išvykstantys kroviniai</a></li>
-            <li><a href="#" class="btn btn-warning funkcijos">Krovinio redagavimas</a></li>
+            <li><a href="Views/Atvykstantys-kroviniai.php" class="btn btn-warning funkcijos">Atvykstantys kroviniai</a></li>
+            <li><a href="Views/Isvykstantys-kroviniai.php" class="btn btn-warning funkcijos">Išvykstantys kroviniai</a></li>
+            <li><a href="Views/Krovinio-redagavimas.php" class="btn btn-warning funkcijos">Krovinio redagavimas</a></li>
+            <li><a href="Views/Krovinio-patikra.php" class="btn btn-warning funkcijos">Atvykusių krovinių patikra</a></li>
         </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

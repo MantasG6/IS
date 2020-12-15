@@ -30,8 +30,8 @@
     <h2 class="header">Logistikos procesų valdymas</h2>
     <div class="container">
         <ul class="list-unstyled">
-            <li><a href="Kroviniu-stebejimas.php" class="btn btn-warning funkcijos">Krovinių stebėjimas</a></li>
-            <li><a href="Važtaraščiai.php" class="btn btn-warning funkcijos">Važtaraščiū peržiūra</a></li>
+            <li><a href="Kroviniu_stebejimas.php" class="btn btn-warning funkcijos">Kroviniai</a></li>
+            <li><a href="Važtaraščiai.php" class="btn btn-warning funkcijos">Važtaraščiai</a></li>
         </ul>
     </div>
 
